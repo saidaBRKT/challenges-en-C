@@ -10,6 +10,6 @@ int main()
 	printf("entrez la distance en Metre : \t");
 	scanf("%f",&dist);
 	res=(dist/1000)/1.609;
-	printf("la distance en Mil est %.2f:",res);
+	printf("la distance en Mile est %.2f:",res);
 		return 0;
 }

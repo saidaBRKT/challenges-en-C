@@ -15,7 +15,9 @@ int main()
 	scanf("%d",&X2);
 	printf("entrez la coordonne Y de B : \t");
 	scanf("%d",&Y2);
+
     AB=sqrt(pow((X2-X1),2)+pow((Y2-Y1),2));
+
 	printf("AB = %.2f\n",AB);
 
 
