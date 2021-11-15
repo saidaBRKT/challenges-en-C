@@ -1,28 +1,28 @@
 #include<stdio.h>
 #include<stdlib.h>
 #include<string.h>
+
+
 int main()
 {
-    char s[100];
-    int i,j,pal,t;
-    printf("Donnez une chaine de caracteres:\n");
-    scanf("%s",s);
-    pal=1;
+    char mot[50],temp[50];
+    int pal ;
+    printf("Entrez un mot : ");
+    scanf("%s",&mot);
+    strlwr(mot);
+    strcpy(temp,mot);
+    strrev(temp);
+    pal = strcmp(temp, mot);
 
-    for(i=0,j=strlen(s)-1;i<j;i++,j--)
+
+    if(pal == 0)
     {
-       if(s[i]!=s[j])
-       {
-         pal=0;
-         break;
-       }
+        printf("palindrome");
     }
-
-
-    if(pal==1)
-    printf("%s est palindrome.\n",s);
-    else
-    printf("%s n est pas palindrome.\n",s);
+    else{
+        printf("n est pas palindrome");
+    }
 
     return 0;
 }
+
