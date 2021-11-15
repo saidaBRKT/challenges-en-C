@@ -34,4 +34,3 @@ int main()
         printf("le point P n appartient pas au segment AB");
     return 0;
 }
-
